@@ -1,0 +1,61 @@
+.container {
+    width: 320px;
+    height: 240px;
+    position: relative;
+}
+
+.container video {
+    position: ce;
+    bottom: 0;
+    left: 0;
+    width: 1235px;
+    height: 600px;
+    z-index: 1 !important;
+}
+
+.container .overlay {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    z-index: 2;
+}
+
+.clickme {
+    width: 170px;
+    height: 63px;
+    margin-top: 1000px;
+    color: rgb(113, 105, 105);
+    border-radius: 4px;
+    border: 3px solid #42fbf2;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+
+.clickme:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.clickme:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #42fbf2;
+}
+
+.clickme:hover::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
