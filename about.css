@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+
+* {
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 4px;
+}
+
+body {
+    background-image: url(background.png);
+    background-size: cover;
+    width: 99%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #fff;
+}
+
+p {
+    font-family: sans-serif;
+    color: #f2dada;
+    font-size: 20px;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.clickme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.clickme {
+    width: 170px;
+    height: 63px;
+    padding-left: 26px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 0, 68);
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+}
+
+.clickme:hover {
+    box-shadow: inset 170px 0 0 0 #06a8f9;
+    cursor: pointer;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
